@@ -1,8 +1,9 @@
+
 class Streamplace < Formula
   desc "Live video for the AT Protocol. Solving video for everybody forever."
   homepage "https://stream.place"
-  version "0.7.11"
   license "GPL-3.0-or-later"
+  version "0.7.11"
 
   on_macos do
     if Hardware::CPU.arm?
