@@ -3,29 +3,29 @@ class Streamplace < Formula
   desc "Live video for the AT Protocol. Solving video for everybody forever."
   homepage "https://stream.place"
   license "GPL-3.0-or-later"
-  version "0.9.15"
+  version "0.10.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.9.15/streamplace-v0.9.15-darwin-arm64.tar.gz"
-      sha256 "d9ca32ac6267de021b6624654fd0948b3e4ee0e7e7e6ef9fdc372629e6954b01"
+      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.10.0/streamplace-v0.10.0-darwin-arm64.tar.gz"
+      sha256 "b986e8ab4859ed58e05642c1697db4e940c678b974f385ac72e86c9ad2879880"
     end
 
     if Hardware::CPU.intel?
-      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.9.15/streamplace-v0.9.15-darwin-amd64.tar.gz"
-      sha256 "2e64bc0f1837305d43a3ba31ed76abaf765b6411b6f058c8dddfe82f13c70c00"
+      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.10.0/streamplace-v0.10.0-darwin-amd64.tar.gz"
+      sha256 "227e16fe5669ba3c19921718b9717cd0197fff2c1b34a1808d3e08f0daa279a2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.9.15/streamplace-v0.9.15-linux-arm64.tar.gz"
-      sha256 "8ecd33700dcb0c40f3a0b7d65cd88452cfc0e2d984e9256fe2048ba4204edfb6"
+      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.10.0/streamplace-v0.10.0-linux-arm64.tar.gz"
+      sha256 "8f45631d4be2c36e1583e103c48d6494128b8761633f2f594d51b93e81944777"
     end
 
     if Hardware::CPU.intel?
-      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.9.15/streamplace-v0.9.15-linux-amd64.tar.gz"
-      sha256 "54dd79b014575d3cf10c15a48e44ec6f0e8ae8a04f13083ab00b1e70ec978b9a"
+      url "https://git-cloudflare.stream.place/api/v4/projects/1/packages/generic/latest/v0.10.0/streamplace-v0.10.0-linux-amd64.tar.gz"
+      sha256 "2f28d764d49ca16c1cd191dc60e175abb6e05cff3fe1210a975de7194114a4f5"
     end
   end
 
